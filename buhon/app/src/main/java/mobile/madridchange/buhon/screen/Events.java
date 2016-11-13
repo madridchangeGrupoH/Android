@@ -177,9 +177,9 @@ public class Events extends AppCompatActivity implements PropuestasFragment.OnFr
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Propuestas";
+                    return "On\'s";
                 case 1:
-                    return "Organizados";
+                    return "Propuestos";
             }
             return null;
         }

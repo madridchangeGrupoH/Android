@@ -1,5 +1,6 @@
 package mobile.madridchange.buhon.adapters.beans;
 
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -9,10 +10,20 @@ import android.widget.TextView;
 public class EventsBaseAdapterBean {
     private TextView txtName;
     private TextView txtDescription;
+    private ImageView imagenEvento;
 
-    public EventsBaseAdapterBean(TextView txtName, TextView txtDescription) {
+    public ImageView getImagenEvento() {
+        return imagenEvento;
+    }
+
+    public void setImagenEvento(ImageView imagenEvento) {
+        this.imagenEvento = imagenEvento;
+    }
+
+    public EventsBaseAdapterBean(TextView txtName, TextView txtDescription, ImageView imagenEvento) {
         this.txtName = txtName;
         this.txtDescription = txtDescription;
+        this.imagenEvento = imagenEvento;
     }
 
     public TextView getTxtName() {

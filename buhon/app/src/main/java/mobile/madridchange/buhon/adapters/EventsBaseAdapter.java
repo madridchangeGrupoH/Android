@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -63,7 +64,11 @@ public class EventsBaseAdapter extends BaseAdapter {
             LayoutInflater infalInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = infalInflater.inflate(R.layout.fragment_list_events, parent, false);
 
-            itemEvent = new EventsBaseAdapterBean((TextView) row.findViewById(R.id.miEvento), (TextView) row.findViewById(R.id.miDescripcion));
+            itemEvent = new EventsBaseAdapterBean(
+                    (TextView) row.findViewById(R.id.miEvento),
+                    (TextView) row.findViewById(R.id.miDescripcion),
+                    (ImageView) row.findViewById(R.id.imageView)
+            );
 
             row.setTag(itemEvent);
         }else{
